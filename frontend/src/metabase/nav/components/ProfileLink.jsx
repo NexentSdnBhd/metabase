@@ -86,7 +86,7 @@ export default class ProfileLink extends Component {
       {
         title: t`Engine`,
         icon: null,
-        action: () => window.location.href = `https://engine.nexent.co`,
+        action: () => (window.location.href = `https://engine.nexent.co`),
         event: `Navbar;Profile Dropdown;Engine Panel`,
       },
       {
