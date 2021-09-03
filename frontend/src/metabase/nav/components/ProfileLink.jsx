@@ -84,6 +84,12 @@ export default class ProfileLink extends Component {
         event: `Navbar;Profile Dropdown;About ${tag}`,
       },
       {
+        title: t`Engine`,
+        icon: null,
+        action: () => window.location.href = `https://engine.nexent.co`,
+        event: `Navbar;Profile Dropdown;Engine Panel`,
+      },
+      {
         title: t`Sign out`,
         icon: null,
         link: "auth/logout",

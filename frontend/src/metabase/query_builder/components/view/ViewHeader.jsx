@@ -27,6 +27,7 @@ import NativeQueryButton from "./NativeQueryButton";
 import RunButtonWithTooltip from "../RunButtonWithTooltip";
 
 import StructuredQuery from "metabase-lib/lib/queries/StructuredQuery";
+import Back from 'metabase/nexent/Back'
 
 const viewTitleHeaderPropTypes = {
   question: PropTypes.object.isRequired,
@@ -244,6 +245,7 @@ export class ViewTitleHeader extends React.Component {
           </div>
         )}
         <div className="ml-auto flex align-center">
+          <Back classes="text-brand text-bold py1 px2 rounded bg-white bg-light-hover"/>
           {isDirty ? (
             <Link
               className="text-brand text-bold py1 px2 rounded bg-white bg-light-hover"

@@ -1,0 +1,15 @@
+version: '3'
+services:
+  metabase-secrets:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    environment: 
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: users
+      MB_DB_PORT: 5432
+      MB_DB_USER: root
+      MB_DB_PASS: qazQAZ123!@#
+      MB_DB_HOST: 202.165.22.213

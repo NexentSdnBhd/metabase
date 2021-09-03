@@ -30,6 +30,7 @@ import type {
   DashCardId,
 } from "metabase-types/types/Dashboard";
 import { Link } from "react-router";
+import Back from 'metabase/nexent/Back'
 
 type Props = {
   location: LocationDescriptor,
@@ -198,6 +199,7 @@ export default class DashboardHeader extends Component {
 
     if (isFullscreen && parametersWidget) {
       buttons.push(parametersWidget);
+      buttons.push(<Back classes="text-brand-hover"/>);
     }
 
     if (isEditing) {
@@ -280,6 +282,7 @@ export default class DashboardHeader extends Component {
     }
 
     if (!isFullscreen && !isEditing && canEdit) {
+      buttons.push(<Back classes="text-brand-hover cursor-pointer"/>,);
       buttons.push(
         <Tooltip key="edit-dashboard" tooltip={t`Edit dashboard`}>
           <a
