@@ -9,12 +9,12 @@ RUN apk upgrade & apk add --update-cache --no-cache bash ttf-dejavu fontconfig c
     /opt/java/openjdk/bin/keytool -noprompt -import -trustcacerts -alias aws-rds -file /app/certs/rds-combined-ca-bundle.pem -keystore /etc/ssl/certs/java/cacerts -keypass changeit -storepass changeit && \
     curl https://cacerts.digicert.com/DigiCertGlobalRootG2.crt.pem -o /app/certs/DigiCertGlobalRootG2.crt.pem  && \
     /opt/java/openjdk/bin/keytool -noprompt -import -trustcacerts -alias azure-cert -file /app/certs/DigiCertGlobalRootG2.crt.pem -keystore /etc/ssl/certs/java/cacerts -keypass changeit -storepass changeit && \
-    mkdir -p /plugins && chmod a+rwx /plugins
+    mkdir -p /plugins && chmod a+rwx /plugins 
+
+COPY ./csv.metabase-driver.jar /plugins
 
 # add Metabase jar & add our run script to the image
 COPY ./metabase.jar ./run_metabase.sh /app/
-
-COPY ./csv.metabase-driver.jar /app/plugins/
 
 # expose our default runtime port
 EXPOSE 3000

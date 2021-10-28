@@ -6,7 +6,6 @@ import { iconPropTypes } from "metabase/components/Icon";
 import { useScrollOnMount } from "metabase/hooks/use-scroll-on-mount";
 
 import { ItemRoot, ItemIcon, ItemTitle } from "./SelectListItem.styled";
-import { useScrollOnMount } from "metabase/hooks/use-scroll-on-mount";
 
 const propTypes = {
   id: PropTypes.string.isRequired,
