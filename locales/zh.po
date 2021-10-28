@@ -76,10 +76,11 @@ msgid "Metabase can scan the values present in each\n"
 "database."
 msgstr "Metabase 可以扫描数据库中每个字段的值, 用以启用查询或仪表板中的选择框过滤器. 当您的数据库较大时, 这可能是一个资源密集型的过程."
 
-<<<<<<< HEAD
-#: frontend/src/metabase/entities/databases/forms.js:381
-=======
 #: frontend/src/metabase/entities/databases/forms.js:377
+msgid "When should Metabase automatically scan and cache field values?"
+msgstr "Metabase 应该在什么时候自动扫描缓存的字段值"
+
+#: frontend/src/metabase/admin/databases/components/widgets/CacheFieldValuesScheduleWidget.jsx:26
 msgid "Regularly, on a schedule"
 msgstr "根据排程，周期性地进行"
 
@@ -142,15 +143,6 @@ msgstr "在这个框里:"
 #: frontend/src/metabase/admin/datamodel/components/ObjectRetireModal.jsx:50
 #: frontend/src/metabase/admin/datamodel/components/SegmentForm.jsx:85
 #: frontend/src/metabase/admin/people/components/AddRow.jsx:28
-<<<<<<< HEAD
-#: frontend/src/metabase/admin/permissions/components/PermissionsEditor.jsx:50
-#: frontend/src/metabase/admin/permissions/components/PermissionsEditor.jsx:53
-#: frontend/src/metabase/admin/permissions/containers/CollectionPermissionsModal.jsx:119
-#: frontend/src/metabase/admin/permissions/selectors.js:160
-#: frontend/src/metabase/admin/permissions/selectors.js:170
-#: frontend/src/metabase/admin/permissions/selectors.js:185
-#: frontend/src/metabase/admin/permissions/selectors.js:224
-=======
 #: frontend/src/metabase/admin/permissions/components/CollectionPermissionsModal/CollectionPermissionsModal.jsx:144
 #: frontend/src/metabase/admin/permissions/components/PermissionsPageLayout/PermissionsEditBar.jsx:46
 #: frontend/src/metabase/admin/permissions/components/PermissionsPageLayout/PermissionsEditBar.jsx:49
@@ -159,7 +151,6 @@ msgstr "在这个框里:"
 #: frontend/src/metabase/admin/permissions/selectors/confirmations.js:73
 #: frontend/src/metabase/admin/permissions/selectors/confirmations.js:88
 #: frontend/src/metabase/admin/permissions/selectors/confirmations.js:127
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:397
 #: frontend/src/metabase/admin/settings/components/widgets/GroupMappingsWidget.jsx:206
 #: frontend/src/metabase/admin/settings/components/widgets/GroupMappingsWidget.jsx:273
@@ -195,37 +186,18 @@ msgstr "取消"
 msgid "Delete"
 msgstr "删除"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:158
-=======
 #: enterprise/frontend/src/metabase-enterprise/audit_app/components/AuditSidebar.jsx:62
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:145
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/admin/databases/containers/DatabaseListApp.jsx:96
 #: frontend/src/metabase/admin/permissions/selectors/data-permissions.js:89
 #: frontend/src/metabase/admin/routes.jsx:63
 #: frontend/src/metabase/home/containers/SearchApp.jsx:38
-<<<<<<< HEAD
-#: frontend/src/metabase/nav/containers/Navbar.jsx:132
-=======
 #: frontend/src/metabase/nav/containers/Navbar.jsx:134
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/reference/databases/DatabaseSidebar.jsx:17
 #: frontend/src/metabase/reference/databases/TableSidebar.jsx:20
 msgid "Databases"
 msgstr "数据库"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:159
-msgid "Add Database"
-msgstr "添加数据库"
-
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:80
-msgid "Connection"
-msgstr "连接"
-
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:84
-=======
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:146
 msgid "Add Database"
 msgstr "添加数据库"
@@ -235,16 +207,11 @@ msgid "Connection"
 msgstr "连接"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:78
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Scheduling"
 msgstr "调度"
 
 #: enterprise/frontend/src/metabase-enterprise/auth/components/SettingsSAMLForm.jsx:185
-<<<<<<< HEAD
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:192
-=======
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:180
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/admin/datamodel/components/MetricForm.jsx:63
 #: frontend/src/metabase/admin/datamodel/components/SegmentForm.jsx:81
 #: frontend/src/metabase/admin/permissions/components/PermissionsPageLayout/PermissionsEditBar.jsx:35
@@ -257,31 +224,18 @@ msgstr "调度"
 msgid "Save changes"
 msgstr "保存修改"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:237
-=======
 #: frontend/src/metabase/admin/databases/components/DatabaseEditApp/Sidebar/Sidebar.jsx:33
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/admin/datamodel/containers/MetricListApp.jsx:31
 #: frontend/src/metabase/admin/datamodel/containers/SegmentListApp.jsx:31
 msgid "Actions"
 msgstr "动作"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:245
-msgid "Sync database schema now"
-msgstr "开始同步数据库模式"
-
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:246
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:258
-=======
 #: frontend/src/metabase/admin/databases/components/DatabaseEditApp/Sidebar/Sidebar.jsx:39
 msgid "Sync database schema now"
 msgstr "开始同步数据库模式"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseEditApp/Sidebar/Sidebar.jsx:40
 #: frontend/src/metabase/admin/databases/components/DatabaseEditApp/Sidebar/Sidebar.jsx:50
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:16
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:24
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:91
@@ -289,21 +243,6 @@ msgstr "开始同步数据库模式"
 msgid "Starting…"
 msgstr "开始..."
 
-<<<<<<< HEAD
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:247
-msgid "Failed to sync"
-msgstr "同步失败"
-
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:248
-msgid "Sync triggered!"
-msgstr "同步触发！"
-
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:257
-msgid "Re-scan field values now"
-msgstr "现在重新扫描字段值"
-
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:259
-=======
 #: frontend/src/metabase/admin/databases/components/DatabaseEditApp/Sidebar/Sidebar.jsx:41
 msgid "Failed to sync"
 msgstr "同步失败"
@@ -317,46 +256,28 @@ msgid "Re-scan field values now"
 msgstr "现在重新扫描字段值"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseEditApp/Sidebar/Sidebar.jsx:51
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:17
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:92
 msgid "Failed to start scan"
 msgstr "无法开始扫描"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:260
-=======
 #: frontend/src/metabase/admin/databases/components/DatabaseEditApp/Sidebar/Sidebar.jsx:52
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:18
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:93
 msgid "Scan triggered!"
 msgstr "扫描已触发！"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:267
-=======
 #: frontend/src/metabase/admin/databases/components/DatabaseEditApp/Sidebar/Sidebar.jsx:59
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/query_builder/components/AlertModals.jsx:418
 msgid "Danger Zone"
 msgstr "危险地带"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:273
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:276
-msgid "Discard saved field values"
-msgstr "放弃保存的字段值"
-
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:291
-=======
 #: frontend/src/metabase/admin/databases/components/DatabaseEditApp/Sidebar/Sidebar.jsx:65
 #: frontend/src/metabase/admin/databases/components/DatabaseEditApp/Sidebar/Sidebar.jsx:68
 msgid "Discard saved field values"
 msgstr "放弃保存的字段值"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseEditApp/Sidebar/Sidebar.jsx:79
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Remove this database"
 msgstr "删除数据库"
 
@@ -371,16 +292,6 @@ msgstr "添加数据库"
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:216
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:89
 #: frontend/src/metabase/collections/components/BaseItemsTable.jsx:144
-<<<<<<< HEAD
-#: frontend/src/metabase/containers/SaveQuestionModal.jsx:134
-#: frontend/src/metabase/entities/collections/forms.js:22
-#: frontend/src/metabase/entities/dashboards.js:144
-#: frontend/src/metabase/entities/databases/forms.js:338
-#: frontend/src/metabase/entities/questions.js:90
-#: frontend/src/metabase/entities/questions.js:106
-#: frontend/src/metabase/lib/expressions/helper_text_strings.js:480
-#: frontend/src/metabase/visualizations/lib/settings/column.js:351
-=======
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:145
 #: frontend/src/metabase/entities/collections/forms.js:22
 #: frontend/src/metabase/entities/dashboards/forms.js:8
@@ -388,7 +299,6 @@ msgstr "添加数据库"
 #: frontend/src/metabase/entities/questions/forms.js:6
 #: frontend/src/metabase/lib/expressions/helper_text_strings.js:480
 #: frontend/src/metabase/visualizations/lib/settings/column.js:348
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/visualizations/visualizations/Scalar.jsx:90
 msgid "Name"
 msgstr "名字"
@@ -422,11 +332,7 @@ msgid "Successfully saved!"
 msgstr "保存成功！"
 
 #: frontend/src/metabase/admin/datamodel/components/ObjectActionSelect.jsx:48
-<<<<<<< HEAD
-#: frontend/src/metabase/dashboard/components/DashCard.jsx:442
-=======
 #: frontend/src/metabase/dashboard/components/DashCard.jsx:446
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/query_builder/components/AlertListPopoverContent.jsx:202
 #: frontend/src/metabase/query_builder/components/template_tags/snippet-sidebar/SnippetRow.jsx:90
 #: frontend/src/metabase/reference/components/EditableReferenceHeader.jsx:89
@@ -472,15 +378,9 @@ msgid "Success"
 msgstr "成功"
 
 #: frontend/src/metabase/admin/datamodel/components/PartialQueryBuilder.jsx:131
-<<<<<<< HEAD
-#: frontend/src/metabase/dashboard/components/DashCard.jsx:442
-#: frontend/src/metabase/public/components/widgets/AdvancedEmbedPane.jsx:108
-#: frontend/src/metabase/query_builder/components/notebook/NotebookStep.jsx:188
-=======
 #: frontend/src/metabase/dashboard/components/DashCard.jsx:446
 #: frontend/src/metabase/public/components/widgets/AdvancedEmbedPane.jsx:108
 #: frontend/src/metabase/query_builder/components/notebook/NotebookStep.jsx:187
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/query_builder/components/view/QuestionPreviewToggle.jsx:16
 msgid "Preview"
 msgstr "预览"
@@ -518,11 +418,7 @@ msgstr "选择目标"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar.jsx:852
 #: frontend/src/metabase/dashboard/components/ClickMappings.jsx:171
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/notebook/steps/FieldsPicker.jsx:23
-=======
 #: frontend/src/metabase/query_builder/components/notebook/steps/FieldsPicker.jsx:19
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/visualizations/visualizations/Table.jsx:79
 #: frontend/src/metabase/visualizations/visualizations/Table.jsx:91
 #: frontend/src/metabase/visualizations/visualizations/Table.jsx:122
@@ -686,11 +582,7 @@ msgstr "编辑 "
 msgid "made some changes"
 msgstr "做了一些改动"
 
-<<<<<<< HEAD
-#: enterprise/frontend/src/metabase-enterprise/moderation/service.js:61
-=======
 #: enterprise/frontend/src/metabase-enterprise/moderation/service.js:82
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/admin/datamodel/components/revisions/Revision.jsx:47
 #: frontend/src/metabase/home/components/Activity.jsx:83
 #: frontend/src/metabase/query_builder/components/AlertListPopoverContent.jsx:334
@@ -825,10 +717,7 @@ msgstr "选择任意表单来显示它的所有模式并且添加或删除元数
 #: frontend/src/metabase/admin/datamodel/components/MetricForm.jsx:32
 #: frontend/src/metabase/admin/datamodel/components/SegmentForm.jsx:31
 #: frontend/src/metabase/entities/collections/forms.js:26
-<<<<<<< HEAD
-=======
 #: frontend/src/metabase/entities/dashboards/forms.js:11
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/entities/snippet-collections.js:76
 msgid "Name is required"
 msgstr "名称必填"
@@ -954,11 +843,7 @@ msgstr "这将显示在过滤器的修订历史记录中，以帮助每个人记
 #: frontend/src/metabase/admin/routes.jsx:141
 #: frontend/src/metabase/admin/settings/containers/SettingsEditorApp.jsx:226
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:100
-<<<<<<< HEAD
-#: frontend/src/metabase/nav/containers/Navbar.jsx:114
-=======
 #: frontend/src/metabase/nav/containers/Navbar.jsx:116
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/parameters/components/ParameterSidebar.jsx:19
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorSidebar.jsx:96
 #: frontend/src/metabase/query_builder/components/view/ViewFooter.jsx:217
@@ -1038,11 +923,7 @@ msgid "A group is only as good as its members."
 msgstr "组内成员权限一致"
 
 #: frontend/src/metabase/admin/people/components/GroupSummary.jsx:16
-<<<<<<< HEAD
-#: frontend/src/metabase/admin/routes.jsx:55
-=======
 #: frontend/src/metabase/admin/routes.jsx:58
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:56
 msgid "Admin"
 msgstr "管理员"
@@ -1627,10 +1508,7 @@ msgstr "你正在运行的Metabase {0}是最新版本的。"
 msgid "Metabase {0} is available.  You're running {1}"
 msgstr "Metabase {0}可更新。你正在运行是{1}"
 
-<<<<<<< HEAD
-=======
 #: enterprise/frontend/src/metabase-enterprise/audit_app/components/AuditNotificationEditModal/AuditNotificationEditModal.jsx:65
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:82
 #: frontend/src/metabase/components/form/StandardForm.jsx:19
 #: frontend/src/metabase/dashboard/components/DashboardDetailsModal.jsx:77
@@ -1662,11 +1540,7 @@ msgstr "删除自定义地图"
 #: frontend/src/metabase/admin/settings/components/widgets/GroupMappingsWidget.jsx:335
 #: frontend/src/metabase/containers/Overworld.jsx:128
 #: frontend/src/metabase/containers/Overworld.jsx:277
-<<<<<<< HEAD
-#: frontend/src/metabase/dashboard/components/DashCard.jsx:369
-=======
 #: frontend/src/metabase/dashboard/components/DashCard.jsx:372
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/dashboard/components/RemoveFromDashboardModal.jsx:34
 #: frontend/src/metabase/parameters/components/ParameterSidebar.jsx:91
 #: frontend/src/metabase/query_builder/components/expressions/ExpressionWidget.jsx:130
@@ -2111,10 +1985,7 @@ msgid "Embedded Questions"
 msgstr "嵌入的问题"
 
 #: frontend/src/metabase/admin/settings/selectors.js:363
-<<<<<<< HEAD
-=======
 #: frontend/src/metabase/entities/questions/forms.js:35
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Caching"
 msgstr "缓存中"
 
@@ -2263,11 +2134,7 @@ msgid "Sign in with your new password"
 msgstr "用你的新密码登录"
 
 #: frontend/src/metabase/components/ActionButton.jsx:55
-<<<<<<< HEAD
-#: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:177
-=======
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:176
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/pulse/components/PulseEdit.jsx:227
 msgid "Save failed"
 msgstr "保存失败"
@@ -2455,11 +2322,7 @@ msgstr "移动“{0}”？"
 #: frontend/src/metabase/components/EntityMenu.info.js:31
 #: frontend/src/metabase/components/EntityMenu.info.js:87
 #: frontend/src/metabase/containers/CollectionMoveModal.jsx:69
-<<<<<<< HEAD
-#: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:338
-=======
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:337
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/query_builder/components/QuestionActionButtons.jsx:50
 msgid "Move"
 msgstr "移动"
@@ -2476,11 +2339,7 @@ msgstr "归档集合"
 msgid "My personal collection"
 msgstr "我的个人集合"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/collections/components/CollectionHeader/CollectionHeader.jsx:89
-=======
 #: frontend/src/metabase/collections/components/CollectionHeader/CollectionHeader.jsx:91
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "New collection"
 msgstr "新建集合"
 
@@ -2500,11 +2359,7 @@ msgstr "一些数据库安装只有通过SSH通道访问的服务器有权访问
 "当VPN不可用时，这个选项也提供了一个额外的安全层。\n"
 "启用这个选项，通常比直接连接速度更慢。"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/entities/databases/forms.js:354
-=======
 #: frontend/src/metabase/entities/databases/forms.js:349
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "This is a large database, so let me choose when Metabase syncs and scans"
 msgstr "这是一个大型数据库，让我选择Metabase同步和扫描的时间"
 
@@ -2544,19 +2399,11 @@ msgstr "要将Metabase用于此数据，您必须在Google Developers Console中
 msgid "{0} to go to the console if you haven't already done so."
 msgstr "如果您还没有这样做，请转到控制台{0}。"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/entities/databases/forms.js:339
-msgid "How would you like to refer to this database?"
-msgstr "您想如何使用这个数据库？"
-
-#: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:205
-=======
 #: frontend/src/metabase/entities/databases/forms.js:334
 msgid "How would you like to refer to this database?"
 msgstr "您想如何使用这个数据库？"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:193
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/query_builder/components/filters/pickers/DatePicker.jsx:254
 #: frontend/src/metabase/setup/components/DatabaseConnectionStep.jsx:146
 #: frontend/src/metabase/setup/components/DatabaseSchedulingStep.jsx:70
@@ -2689,19 +2536,11 @@ msgstr "输入一个数字"
 msgid "Enter some text"
 msgstr "输入一些文本"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/components/FieldValuesWidget.jsx:558
-msgid "No matching {0} found."
-msgstr "没有找到匹配的{0} "
-
-#: frontend/src/metabase/components/FieldValuesWidget.jsx:567
-=======
 #: frontend/src/metabase/components/FieldValuesWidget.jsx:559
 msgid "No matching {0} found."
 msgstr "没有找到匹配的{0} "
 
 #: frontend/src/metabase/components/FieldValuesWidget.jsx:568
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Including every option in your filter probably won’t do much…"
 msgstr "包括每个选项在你的过滤器中很可能将不会起很大作用……"
 
@@ -2749,15 +2588,9 @@ msgid "Reverted to an earlier revision and {0}"
 msgstr "回滚到一个更早的调整并且{0}"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:50
-<<<<<<< HEAD
-#: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:271
-#: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:276
-#: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:319
-=======
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:270
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:275
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:318
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/reference/segments/SegmentSidebar.jsx:57
 msgid "Revision history"
 msgstr "调整记录"
@@ -2775,38 +2608,22 @@ msgid "What"
 msgstr "什么"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:83
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/QuestionActivityTimeline.jsx:43
-=======
 #: frontend/src/metabase/query_builder/components/QuestionActivityTimeline.jsx:65
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Revert"
 msgstr "恢复"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:84
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/QuestionActivityTimeline.jsx:44
-=======
 #: frontend/src/metabase/query_builder/components/QuestionActivityTimeline.jsx:66
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Reverting…"
 msgstr "恢复中……"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:85
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/QuestionActivityTimeline.jsx:45
-=======
 #: frontend/src/metabase/query_builder/components/QuestionActivityTimeline.jsx:67
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Revert failed"
 msgstr "恢复失败"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:86
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/QuestionActivityTimeline.jsx:46
-=======
 #: frontend/src/metabase/query_builder/components/QuestionActivityTimeline.jsx:68
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Reverted"
 msgstr "已恢复"
 
@@ -2873,24 +2690,14 @@ msgstr "临时密码"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTableList.jsx:227
 #: frontend/src/metabase/components/PasswordReveal.jsx:67
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:451
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:466
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:459
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:474
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Hide"
 msgstr "隐藏"
 
 #: frontend/src/metabase/components/PasswordReveal.jsx:67
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:452
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:467
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:460
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:475
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Show"
 msgstr "显示"
 
@@ -2912,71 +2719,43 @@ msgstr "错误："
 
 #: frontend/src/metabase/admin/settings/selectors.js:265
 #: frontend/src/metabase/components/SchedulePicker.jsx:29
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/time.js:136
-=======
 #: frontend/src/metabase/lib/time.js:144
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Sunday"
 msgstr "星期日"
 
 #: frontend/src/metabase/admin/settings/selectors.js:266
 #: frontend/src/metabase/components/SchedulePicker.jsx:30
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/time.js:124
-=======
 #: frontend/src/metabase/lib/time.js:132
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Monday"
 msgstr "星期一"
 
 #: frontend/src/metabase/admin/settings/selectors.js:267
 #: frontend/src/metabase/components/SchedulePicker.jsx:31
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/time.js:126
-=======
 #: frontend/src/metabase/lib/time.js:134
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Tuesday"
 msgstr "星期二"
 
 #: frontend/src/metabase/admin/settings/selectors.js:268
 #: frontend/src/metabase/components/SchedulePicker.jsx:32
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/time.js:128
-=======
 #: frontend/src/metabase/lib/time.js:136
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Wednesday"
 msgstr "星期三"
 
 #: frontend/src/metabase/admin/settings/selectors.js:269
 #: frontend/src/metabase/components/SchedulePicker.jsx:33
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/time.js:130
-=======
 #: frontend/src/metabase/lib/time.js:138
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Thursday"
 msgstr "星期四"
 
 #: frontend/src/metabase/admin/settings/selectors.js:270
 #: frontend/src/metabase/components/SchedulePicker.jsx:34
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/time.js:132
-=======
 #: frontend/src/metabase/lib/time.js:140
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Friday"
 msgstr "星期五"
 
 #: frontend/src/metabase/admin/settings/selectors.js:271
 #: frontend/src/metabase/components/SchedulePicker.jsx:35
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/time.js:134
-=======
 #: frontend/src/metabase/lib/time.js:142
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Saturday"
 msgstr "星期六"
 
@@ -2990,11 +2769,7 @@ msgid "Last"
 msgstr "过往"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:41
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/time.js:149
-=======
 #: frontend/src/metabase/lib/time.js:157
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "15th (Midpoint)"
 msgstr "第十五个（中位数）"
 
@@ -3002,11 +2777,7 @@ msgstr "第十五个（中位数）"
 msgid "Calendar Day"
 msgstr "日历日"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/components/SchedulePicker.jsx:253
-=======
 #: frontend/src/metabase/components/SchedulePicker.jsx:257
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "your Metabase timezone"
 msgstr "你的Metabase时区"
 
@@ -3066,12 +2837,8 @@ msgid "Table"
 msgstr "表格"
 
 #: frontend/src/metabase/admin/datamodel/components/database/ColumnsList.jsx:151
-<<<<<<< HEAD
-#: frontend/src/metabase/search/components/SearchResult.jsx:193
-=======
 #: frontend/src/metabase/nav/components/utils.js:7
 #: frontend/src/metabase/search/components/InfoText.jsx:37
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Database"
 msgstr "数据库"
 
@@ -3079,11 +2846,7 @@ msgstr "数据库"
 msgid "Creator"
 msgstr "创造者"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/admin/people/components/PeopleList.jsx:244
-=======
 #: frontend/src/metabase/admin/people/components/PeopleList.jsx:247
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/query_builder/components/data-search/SearchResults.jsx:48
 msgid "No results found"
 msgstr "未找到结果"
@@ -3150,18 +2913,10 @@ msgstr "这个卡片叫什么名字？"
 
 #: frontend/src/metabase/admin/tasks/containers/JobInfoApp.jsx:32
 #: frontend/src/metabase/admin/tasks/containers/JobTriggersModal.jsx:19
-<<<<<<< HEAD
-#: frontend/src/metabase/containers/SaveQuestionModal.jsx:145
-#: frontend/src/metabase/entities/collections/forms.js:31
-#: frontend/src/metabase/entities/dashboards.js:151
-#: frontend/src/metabase/entities/questions.js:93
-#: frontend/src/metabase/entities/questions.js:109
-=======
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:151
 #: frontend/src/metabase/entities/collections/forms.js:31
 #: frontend/src/metabase/entities/dashboards/forms.js:15
 #: frontend/src/metabase/entities/questions/forms.js:9
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/lib/core.js:38
 #: frontend/src/metabase/reference/databases/DatabaseDetail.jsx:160
 #: frontend/src/metabase/reference/databases/FieldDetail.jsx:215
@@ -3173,18 +2928,10 @@ msgstr "这个卡片叫什么名字？"
 msgid "Description"
 msgstr "描述"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/containers/SaveQuestionModal.jsx:146
-#: frontend/src/metabase/entities/collections/forms.js:33
-#: frontend/src/metabase/entities/dashboards.js:153
-#: frontend/src/metabase/entities/questions.js:95
-#: frontend/src/metabase/entities/questions.js:111
-=======
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:152
 #: frontend/src/metabase/entities/collections/forms.js:33
 #: frontend/src/metabase/entities/dashboards/forms.js:17
 #: frontend/src/metabase/entities/questions/forms.js:11
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/entities/snippet-collections.js:83
 #: frontend/src/metabase/entities/snippets.js:28
 msgid "It's optional but oh, so helpful"
@@ -3216,11 +2963,7 @@ msgid "That question isn't compatible"
 msgstr "那个问题不兼容"
 
 #: frontend/src/metabase/dashboard/components/AddSeriesModal.jsx:310
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/DataSelector.jsx:760
-=======
 #: frontend/src/metabase/query_builder/components/DataSelector.jsx:761
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Search for a question"
 msgstr "查找问题"
 
@@ -3896,21 +3639,13 @@ msgstr "平均"
 
 #: frontend/src/metabase/lib/schema_metadata.js:646
 #: frontend/src/metabase/visualizations/components/settings/ChartSettingGaugeSegments.jsx:50
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:480
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:488
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Min"
 msgstr "最小"
 
 #: frontend/src/metabase/lib/schema_metadata.js:655
 #: frontend/src/metabase/visualizations/components/settings/ChartSettingGaugeSegments.jsx:59
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:488
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:496
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Max"
 msgstr "最大"
 
@@ -3918,20 +3653,12 @@ msgstr "最大"
 msgid "sad sad panda, lexing errors detected"
 msgstr "哎呀，出错了"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/formatting.js:909
-=======
 #: frontend/src/metabase/lib/formatting.js:946
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "{0} second"
 msgid_plural "{0} seconds"
 msgstr[0] "{0}秒"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/formatting.js:912
-=======
 #: frontend/src/metabase/lib/formatting.js:943
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "{0} minute"
 msgid_plural "{0} minutes"
 msgstr[0] "{0}分钟"
@@ -4536,13 +4263,8 @@ msgstr "按地图、趋势查看时间维度的数据，方便了解趋势变化
 msgid "Custom"
 msgstr "自定义"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/view/QuestionDescription.jsx:51
-#: frontend/src/metabase/query_builder/components/view/ViewHeader.jsx:198
-=======
 #: frontend/src/metabase/query_builder/components/view/QuestionDescription.jsx:53
 #: frontend/src/metabase/query_builder/components/view/ViewHeader.jsx:203
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "New question"
 msgstr "新的疑问"
 
@@ -4650,20 +4372,12 @@ msgid "This Year"
 msgstr "今年"
 
 #: frontend/src/metabase/parameters/components/widgets/ParameterFieldWidget/ParameterFieldWidget.jsx:84
-<<<<<<< HEAD
-#: frontend/src/metabase/parameters/components/widgets/TextWidget.jsx:54
-=======
 #: frontend/src/metabase/parameters/components/widgets/TextWidget.jsx:56
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Enter a value..."
 msgstr "输入一个值……"
 
 #: frontend/src/metabase/parameters/components/widgets/ParameterFieldWidget/ParameterFieldWidget.jsx:99
-<<<<<<< HEAD
-#: frontend/src/metabase/parameters/components/widgets/TextWidget.jsx:90
-=======
 #: frontend/src/metabase/parameters/components/widgets/TextWidget.jsx:92
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Enter a default value..."
 msgstr "输入一个默认值……"
 
@@ -4706,11 +4420,7 @@ msgid "Publish"
 msgstr "发布"
 
 #: frontend/src/metabase/public/components/widgets/AdvancedEmbedPane.jsx:109
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/column.js:347
-=======
 #: frontend/src/metabase/visualizations/lib/settings/column.js:344
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Code"
 msgstr "代码"
 
@@ -5363,11 +5073,7 @@ msgstr "通常"
 msgid "Pick a segment or table"
 msgstr "选择一个区间或者表单"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/entities/databases/forms.js:334
-=======
 #: frontend/src/metabase/entities/databases/forms.js:329
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/query_builder/components/DataSelector.jsx:83
 msgid "Select a database"
 msgstr "选择一个数据库"
@@ -5380,21 +5086,6 @@ msgstr "选择……"
 msgid "Select a table"
 msgstr "选择一个表单"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/DataSelector.jsx:1062
-msgid "No tables found in this database."
-msgstr "该数据库未发现表"
-
-#: frontend/src/metabase/query_builder/components/DataSelector.jsx:1035
-msgid "Is a question missing?"
-msgstr "图表缺失？"
-
-#: frontend/src/metabase/query_builder/components/DataSelector.jsx:1044
-msgid "Learn more about nested queries"
-msgstr "了解更多关于嵌套查询"
-
-#: frontend/src/metabase/query_builder/components/DataSelector.jsx:1088
-=======
 #: frontend/src/metabase/query_builder/components/DataSelector.jsx:1067
 msgid "No tables found in this database."
 msgstr "该数据库未发现表"
@@ -5408,7 +5099,6 @@ msgid "Learn more about nested queries"
 msgstr "了解更多关于嵌套查询"
 
 #: frontend/src/metabase/query_builder/components/DataSelector.jsx:1093
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/query_builder/components/expressions/ExpressionEditorSuggestions.jsx:16
 msgid "Fields"
 msgstr "字段"
@@ -5470,18 +5160,6 @@ msgstr "添加一个聚合"
 #: frontend/src/metabase/query_builder/components/GuiQueryEditor.jsx:316
 #: frontend/src/metabase/query_builder/components/notebook/NotebookStep.jsx:32
 #: frontend/src/metabase/query_builder/components/view/sidebars/ChartTypeSidebar.jsx:69
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/components/LineAreaBarChart.jsx:114
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:89
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:131
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:176
-#: frontend/src/metabase/visualizations/visualizations/Funnel.jsx:68
-#: frontend/src/metabase/visualizations/visualizations/Funnel.jsx:108
-#: frontend/src/metabase/visualizations/visualizations/Funnel.jsx:115
-#: frontend/src/metabase/visualizations/visualizations/Map.jsx:305
-#: frontend/src/metabase/visualizations/visualizations/Map.jsx:311
-#: frontend/src/metabase/visualizations/visualizations/Map.jsx:317
-=======
 #: frontend/src/metabase/visualizations/components/LineAreaBarChart.jsx:122
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:90
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:132
@@ -5492,7 +5170,6 @@ msgstr "添加一个聚合"
 #: frontend/src/metabase/visualizations/visualizations/Map.jsx:307
 #: frontend/src/metabase/visualizations/visualizations/Map.jsx:313
 #: frontend/src/metabase/visualizations/visualizations/Map.jsx:319
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/visualizations/visualizations/PieChart.jsx:107
 #: frontend/src/metabase/visualizations/visualizations/PieChart.jsx:112
 msgid "Data"
@@ -6094,11 +5771,7 @@ msgid "by"
 msgstr "通过"
 
 #: frontend/src/metabase/reference/components/FieldTypeDetail.jsx:24
-<<<<<<< HEAD
-#: frontend/src/metabase/reference/databases/FieldList.jsx:156
-=======
 #: frontend/src/metabase/reference/databases/FieldList.jsx:158
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/reference/segments/SegmentFieldList.jsx:157
 msgid "Field type"
 msgstr "字段类型"
@@ -6598,22 +6271,14 @@ msgstr "登录"
 
 #: enterprise/frontend/src/metabase-enterprise/audit_app/containers/AuditTableWithSearch.jsx:18
 #: frontend/src/metabase/components/FieldValuesWidget.jsx:195
-<<<<<<< HEAD
-#: frontend/src/metabase/containers/ItemPicker.jsx:160
-#: frontend/src/metabase/nav/components/SearchBar.jsx:135
-=======
 #: frontend/src/metabase/containers/ItemPicker.jsx:166
 #: frontend/src/metabase/nav/components/SearchBar.jsx:77
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/routes.jsx:192
 msgid "Search"
 msgstr "查询"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar.jsx:567
-<<<<<<< HEAD
-=======
 #: frontend/src/metabase/nav/components/utils.js:5
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/routes.jsx:211
 msgid "Dashboard"
 msgstr "仪表盘"
@@ -6946,19 +6611,11 @@ msgstr "网格地图需要绑定经度/纬度。"
 msgid "more"
 msgstr "更多"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/components/LineAreaBarChart.jsx:113
-msgid "Which fields do you want to use for the X and Y axes?"
-msgstr "横坐标和纵坐标想使用那些字段?"
-
-#: frontend/src/metabase/visualizations/components/LineAreaBarChart.jsx:115
-=======
 #: frontend/src/metabase/visualizations/components/LineAreaBarChart.jsx:121
 msgid "Which fields do you want to use for the X and Y axes?"
 msgstr "横坐标和纵坐标想使用那些字段?"
 
 #: frontend/src/metabase/visualizations/components/LineAreaBarChart.jsx:123
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/visualizations/visualizations/Funnel.jsx:69
 msgid "Choose fields"
 msgstr "选择字段"
@@ -6987,17 +6644,6 @@ msgstr "撤销设置"
 msgid "Rows {0}-{1} of {2}"
 msgstr "{2}的{0}~{1}行"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/components/Visualization.jsx:215
-msgid "Data truncated to {0} rows."
-msgstr "数据被截断为{0}行。"
-
-#: frontend/src/metabase/visualizations/components/Visualization.jsx:419
-msgid "Could not find visualization"
-msgstr "找不到可视化"
-
-#: frontend/src/metabase/visualizations/components/Visualization.jsx:426
-=======
 #: frontend/src/metabase/visualizations/components/Visualization.jsx:218
 msgid "Data truncated to {0} rows."
 msgstr "数据被截断为{0}行。"
@@ -7007,26 +6653,10 @@ msgid "Could not find visualization"
 msgstr "找不到可视化"
 
 #: frontend/src/metabase/visualizations/components/Visualization.jsx:429
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Could not display this chart with this data."
 msgstr "无法显示这个图表显示这些数据"
 
 #: frontend/src/metabase/query_builder/components/VisualizationResult.jsx:69
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/components/Visualization.jsx:549
-msgid "No results!"
-msgstr "没有结果！"
-
-#: frontend/src/metabase/visualizations/components/Visualization.jsx:570
-msgid "Still Waiting..."
-msgstr "仍然在等待……"
-
-#: frontend/src/metabase/visualizations/components/Visualization.jsx:573
-msgid "This usually takes an average of {0}."
-msgstr "这将通常取一个{0}的平均数。"
-
-#: frontend/src/metabase/visualizations/components/Visualization.jsx:579
-=======
 #: frontend/src/metabase/visualizations/components/Visualization.jsx:550
 msgid "No results!"
 msgstr "没有结果！"
@@ -7040,7 +6670,6 @@ msgid "This usually takes an average of {0}."
 msgstr "这将通常取一个{0}的平均数。"
 
 #: frontend/src/metabase/visualizations/components/Visualization.jsx:580
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "(This is a bit long for a dashboard)"
 msgstr "（这对于仪表盘来说有点太长了）"
 
@@ -7227,11 +6856,7 @@ msgstr "这种图表需要至少2列"
 msgid "This chart type doesn't support more than {0} series of data."
 msgstr "这种图表不支持超过{0}种数据"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:294
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:302
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/visualizations/visualizations/Progress.jsx:68
 msgid "Goal"
 msgstr "目标"
@@ -7375,11 +7000,7 @@ msgstr "堆叠 - 100%"
 msgid "Show goal"
 msgstr "显示目标"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:284
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:292
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Goal value"
 msgstr "目标值"
 
@@ -7399,85 +7020,6 @@ msgstr "什么也没有"
 msgid "Linear Interpolated"
 msgstr "线性插值平滑"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:400
-msgid "X-axis scale"
-msgstr "X轴比例"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:418
-msgid "Timeseries"
-msgstr "时间系列"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:421
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:439
-msgid "Linear"
-msgstr "线性"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:423
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:440
-msgid "Power"
-msgstr "势"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:424
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:441
-msgid "Log"
-msgstr "日志"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:426
-msgid "Histogram"
-msgstr "柱状图"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:428
-msgid "Ordinal"
-msgstr "序数"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:434
-msgid "Y-axis scale"
-msgstr "Y轴比例"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:447
-msgid "Show x-axis line and marks"
-msgstr "显示X轴线和标记"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:346
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:453
-msgid "Compact"
-msgstr "压缩"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:454
-msgid "Rotate 45°"
-msgstr "旋转45°"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:455
-msgid "Rotate 90°"
-msgstr "旋转90°"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:462
-msgid "Show y-axis line and marks"
-msgstr "显示Y轴线段和标记"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:474
-msgid "Auto y-axis range"
-msgstr "自动Y轴范围"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:518
-msgid "Use a split y-axis when necessary"
-msgstr "当需要时使用一个分离的Y轴"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:525
-msgid "Show label on x-axis"
-msgstr "展示标签在X轴上"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:531
-msgid "X-axis label"
-msgstr "X轴标签"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:540
-msgid "Show label on y-axis"
-msgstr "展示标签在Y轴上"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:546
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:408
 msgid "X-axis scale"
 msgstr "X轴比例"
@@ -7555,7 +7097,6 @@ msgid "Show label on y-axis"
 msgstr "展示标签在Y轴上"
 
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:554
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Y-axis label"
 msgstr "Y轴标签"
 
@@ -7765,11 +7306,7 @@ msgstr "原始图表"
 msgid "row chart"
 msgstr "原始图表"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/column.js:383
-=======
 #: frontend/src/metabase/visualizations/lib/settings/column.js:385
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Separator style"
 msgstr "分隔符"
 
@@ -7777,17 +7314,6 @@ msgstr "分隔符"
 msgid "Number of decimal places"
 msgstr "小数位数"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/column.js:408
-msgid "Add a prefix"
-msgstr "添加一个前缀"
-
-#: frontend/src/metabase/visualizations/lib/settings/column.js:412
-msgid "Add a suffix"
-msgstr "添加一个后缀"
-
-#: frontend/src/metabase/visualizations/lib/settings/column.js:401
-=======
 #: frontend/src/metabase/visualizations/lib/settings/column.js:410
 msgid "Add a prefix"
 msgstr "添加一个前缀"
@@ -7797,7 +7323,6 @@ msgid "Add a suffix"
 msgstr "添加一个后缀"
 
 #: frontend/src/metabase/visualizations/lib/settings/column.js:403
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Multiply by a number"
 msgstr "乘以数字"
 
@@ -9654,11 +9179,7 @@ msgstr "记住我"
 msgid "X-ray this schema"
 msgstr "透视这个图表"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/collections/components/CollectionHeader/CollectionHeader.jsx:46
-=======
 #: frontend/src/metabase/collections/components/CollectionHeader/CollectionHeader.jsx:48
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Edit the permissions for this collection"
 msgstr "修改集合权限"
 
@@ -9919,17 +9440,10 @@ msgstr "不适用"
 msgid "Windows domain"
 msgstr "Windows域名"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:524
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:530
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:539
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:545
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:532
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:538
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:547
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:553
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Labels"
 msgstr "标签"
 
@@ -9961,17 +9475,6 @@ msgid "Sharing"
 msgstr "分享"
 
 #: frontend/src/metabase/visualizations/components/ChartSettings.jsx:27
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:218
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:251
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:277
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:283
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:291
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:299
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:313
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:321
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:337
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:226
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:259
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:285
@@ -9981,7 +9484,6 @@ msgstr "分享"
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:321
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:329
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:345
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/visualizations/lib/settings/nested.js:126
 #: frontend/src/metabase/visualizations/visualizations/Funnel.jsx:123
 #: frontend/src/metabase/visualizations/visualizations/PieChart.jsx:117
@@ -10000,16 +9502,6 @@ msgstr "分享"
 msgid "Display"
 msgstr "显示"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:399
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:433
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:446
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:461
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:473
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:479
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:487
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:517
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:407
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:441
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:454
@@ -10018,7 +9510,6 @@ msgstr "显示"
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:487
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:495
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:525
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Axes"
 msgstr "坐标轴"
 
@@ -10268,19 +9759,11 @@ msgstr "货币单位"
 msgid "Currency label style"
 msgstr "货币标签风格"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/column.js:363
-msgid "Where to display the unit of currency"
-msgstr "在哪里显示货币单位"
-
-#: frontend/src/metabase/visualizations/lib/settings/column.js:397
-=======
 #: frontend/src/metabase/visualizations/lib/settings/column.js:365
 msgid "Where to display the unit of currency"
 msgstr "在哪里显示货币单位"
 
 #: frontend/src/metabase/visualizations/lib/settings/column.js:399
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Minimum number of decimal places"
 msgstr "最少小数位数"
 
@@ -10288,11 +9771,7 @@ msgstr "最少小数位数"
 msgid "Stacked chart type"
 msgstr "堆叠图表类型"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:292
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:300
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Goal label"
 msgstr "目标标签"
 
@@ -10308,11 +9787,7 @@ msgstr "线条样式"
 msgid "Show dots on lines"
 msgstr "在线上显示圆圈"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:345
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:353
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/visualizations/lib/settings/series.js:86
 #: frontend/src/metabase/visualizations/lib/settings/series.js:123
 msgid "Auto"
@@ -12797,7 +12272,7 @@ msgstr "提取文件{0} - > {1}"
 #: resources/automagic_dashboards/field/DateTime.yaml
 #: resources/automagic_dashboards/question/GenericQuestion.yaml
 msgid "Here's a closer look at your [[this]]"
-msgstr "依赖性满足; 现在将加载这些插件：{0}"
+msgstr "依赖性满足; 现在将加载这些插件：{0}"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[CreateTimestamp]] by day of the week"
@@ -13163,11 +12638,7 @@ msgid "Using this option requires that provided host is a FQDN.  If connecting t
 "leave this disabled."
 msgstr "使用此选项要求提供的主机是一个FQDN。 如果连接到一个Atlas集群，您可能需要启用此选项。 如果你不知道这意味着什么，请保持禁用该选项。"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/entities/databases/forms.js:347
-=======
 #: frontend/src/metabase/entities/databases/forms.js:342
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Automatically run queries when doing simple filtering and summarizing"
 msgstr "在进行简单的过滤和汇总时自动运行查询"
 
@@ -13308,19 +12779,11 @@ msgstr "选择分组的列"
 msgid "Pick your starting data"
 msgstr "选择您的起始数据"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/notebook/steps/FieldsPicker.jsx:31
-msgid "Select None"
-msgstr "全不选"
-
-#: frontend/src/metabase/query_builder/components/notebook/steps/FieldsPicker.jsx:31
-=======
 #: frontend/src/metabase/query_builder/components/notebook/steps/FieldsPicker.jsx:34
 msgid "Select None"
 msgstr "全不选"
 
 #: frontend/src/metabase/query_builder/components/notebook/steps/FieldsPicker.jsx:34
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Select All"
 msgstr "全选"
 
@@ -13443,16 +12906,6 @@ msgstr "分组条件"
 msgid "Add a metric"
 msgstr "添加指标"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/core.js:132 frontend/src/metabase/lib/core.js:137
-#: frontend/src/metabase/lib/core.js:142 frontend/src/metabase/lib/core.js:147
-#: frontend/src/metabase/lib/core.js:152 frontend/src/metabase/lib/core.js:157
-#: frontend/src/metabase/user/components/UserSettings.jsx:63
-msgid "Profile"
-msgstr "主页"
-
-#: frontend/src/metabase/visualizations/components/Visualization.jsx:583
-=======
 #: frontend/src/metabase/account/settings/components/AccountHeader/AccountHeader.jsx:27
 #: frontend/src/metabase/lib/core.js:132 frontend/src/metabase/lib/core.js:137
 #: frontend/src/metabase/lib/core.js:142 frontend/src/metabase/lib/core.js:147
@@ -13461,7 +12914,6 @@ msgid "Profile"
 msgstr "主页"
 
 #: frontend/src/metabase/visualizations/components/Visualization.jsx:584
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "This is usually pretty fast but seems to be taking a while right now."
 msgstr "这通常很快，但现在似乎需要一段时间。"
 
@@ -13892,11 +13344,7 @@ msgctxt "Modal for selecting columns in source data or when doing a join."
 msgid "Pick the columns you want to include"
 msgstr "选择需要包含的列"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/entities/databases/forms.js:348
-=======
 #: frontend/src/metabase/entities/databases/forms.js:343
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "When this is on, Metabase will automatically run queries when users do simple explorations with the Summarize and Filter buttons when viewing a table or chart. You can turn this off if querying this database is slow. This setting doesn’t affect drill-throughs or SQL queries."
 msgstr "这个选项开启时，当用户在查看表格或图表时使用“汇总”和“过滤”按钮进行简单数据探索时，Metabase将自动运行查询。 如果查询此数据库的速度很慢，可以将该选项关闭。 此设置不会影响数据钻探或SQL查询。"
 
@@ -13962,11 +13410,7 @@ msgstr "邮箱登录"
 msgid "Using this option requires that provided host is a FQDN.  If connecting to an Atlas cluster, you might need to enable this option.  If you don't know what this means, leave this disabled."
 msgstr "使用此选项要求提供的主机是FQDN。 如果连接到Atlas群集，则可能需要启用此选项。 如果您不知道这意味着什么，请禁用此功能。"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/entities/databases/forms.js:355
-=======
 #: frontend/src/metabase/entities/databases/forms.js:350
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
 msgstr "默认情况下，Metabase每小时执行一次轻量级同步，每天执行一次密集扫描。 如果您有一个大型数据库，我们建议启用此功能并查看字段值扫描的发生时间和频率。"
 
@@ -14106,29 +13550,6 @@ msgstr "该表基于"
 msgid "(empty)"
 msgstr "（空）"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:278
-msgid "Goal line"
-msgstr "目标线"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:300
-msgid "Trend line"
-msgstr "趋势线"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:314
-msgid "Show values on data points"
-msgstr "在数据点上显示值"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:322
-msgid "Values to show"
-msgstr "值显示"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:329
-msgid "As many as can fit nicely"
-msgstr "尽可能多地适合"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:330
-=======
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:286
 msgid "Goal line"
 msgstr "目标线"
@@ -14150,7 +13571,6 @@ msgid "As many as can fit nicely"
 msgstr "尽可能多地适合"
 
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:338
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "All"
 msgstr "全部"
 
@@ -14486,11 +13906,7 @@ msgstr "出于安全原因，密码重置链接会在一段时间后失效。如
 msgid "Save new password"
 msgstr "存储新密码"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/components/FieldValuesWidget.jsx:553
-=======
 #: frontend/src/metabase/components/FieldValuesWidget.jsx:554
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "No matching result"
 msgstr "无匹配结果"
 
@@ -14515,36 +13931,14 @@ msgstr "{0}获取验证码。"
 msgid "or"
 msgstr "或"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/entities/databases/forms.js:48
-#: frontend/src/metabase/entities/databases/forms.js:271
-#: frontend/src/metabase/entities/databases/forms.js:340
-=======
 #: frontend/src/metabase/entities/databases/forms.js:49
 #: frontend/src/metabase/entities/databases/forms.js:258
 #: frontend/src/metabase/entities/databases/forms.js:335
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/entities/users/forms.js:60
 #: frontend/src/metabase/lib/validate.js:6
 msgid "required"
 msgstr "需要"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/entities/databases/forms.js:331
-msgid "Database type"
-msgstr "数据库类型"
-
-#: frontend/src/metabase/entities/databases/forms.js:371
-msgid "This is a lightweight process that checks for updates to this database’s schema. In most cases, you should be fine leaving this set to sync hourly."
-msgstr "这是一个轻量级的过程，用于检查对该数据库架构的更新。在大多数情况下，最好将此设置保持为每小时同步。"
-
-#: frontend/src/metabase/entities/databases/forms.js:379
-msgid "Metabase can scan the values present in each field in this database to enable checkbox filters in dashboards and questions. This can be a somewhat resource-intensive process, particularly if you have a very large database."
-msgstr "Metabase可以扫描此数据库中每个字段中存在的值，以启用仪表板和问题中的复选框过滤器。这可能会占用一些资源，特别是如果您的数据库很大。"
-
-#: frontend/src/metabase/entities/questions.js:99
-#: frontend/src/metabase/search/components/SearchResult.jsx:191
-=======
 #: frontend/src/metabase/entities/databases/forms.js:326
 msgid "Database type"
 msgstr "数据库类型"
@@ -14561,7 +13955,6 @@ msgstr "Metabase可以扫描此数据库中每个字段中存在的值，以启�
 #: frontend/src/metabase/nav/components/utils.js:8
 #: frontend/src/metabase/search/components/InfoText.jsx:59
 #: frontend/src/metabase/search/components/InfoText.jsx:62
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Collection"
 msgstr "集合"
 
@@ -15057,21 +14450,6 @@ msgstr "以大写形式返回文本字符串。"
 msgid "The column with values to convert to upper case."
 msgstr "具有要转换为大写字母的值的列。"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/settings.js:235
-msgid "must be {0} and include {1}."
-msgstr "必须是 {0} 并且包含 {1}。"
-
-#: frontend/src/metabase/lib/settings.js:237
-msgid "must be {0}."
-msgstr "必须是 {0}。"
-
-#: frontend/src/metabase/lib/settings.js:239
-msgid "must include {0}."
-msgstr "必须包含 {0}。"
-
-#: frontend/src/metabase/lib/settings.js:252
-=======
 #: frontend/src/metabase/lib/settings.js:239
 msgid "must be {0} and include {1}."
 msgstr "必须是 {0} 并且包含 {1}。"
@@ -15085,43 +14463,26 @@ msgid "must include {0}."
 msgstr "必须包含 {0}。"
 
 #: frontend/src/metabase/lib/settings.js:256
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "at least {0} character long"
 msgid_plural "at least {0} characters long"
 msgstr[0] "至少{0}个字符"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/settings.js:261
-=======
 #: frontend/src/metabase/lib/settings.js:265
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "{0} lower case letter"
 msgid_plural "{0} lower case letters"
 msgstr[0] "{0}小写字母"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/settings.js:270
-=======
 #: frontend/src/metabase/lib/settings.js:274
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "{0} upper case letter"
 msgid_plural "{0} upper case letters"
 msgstr[0] "{0}大写字母"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/settings.js:279
-=======
 #: frontend/src/metabase/lib/settings.js:283
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "{0} number"
 msgid_plural "{0} numbers"
 msgstr[0] "{0}号"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/settings.js:284
-=======
 #: frontend/src/metabase/lib/settings.js:288
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "{0} special character"
 msgid_plural "{0} special characters"
 msgstr[0] "{0}特殊字符"
@@ -15163,11 +14524,7 @@ msgstr "选择一个已保存的问题"
 msgid "Pick a different question"
 msgstr "选择一个不同的问题"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/collections/containers/CollectionSidebar/CollectionSidebar.jsx:118
-=======
 #: frontend/src/metabase/collections/containers/CollectionSidebar/CollectionSidebar.jsx:124
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/query_builder/components/template_tags/CardTagEditor.jsx:67
 msgid "Loading…"
 msgstr "载入中..."
@@ -15216,25 +14573,6 @@ msgstr "12小时制"
 msgid "24-hour clock"
 msgstr "24小时制"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/visualizations/lib/settings/column.js:341
-msgid "Symbol"
-msgstr "符号"
-
-#: frontend/src/metabase/visualizations/lib/settings/column.js:367
-msgid "In the column heading"
-msgstr "在列标题中"
-
-#: frontend/src/metabase/visualizations/lib/settings/column.js:368
-msgid "In every table cell"
-msgstr "在每个表格单元格中"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:338
-msgid "Value formatting"
-msgstr "值格式"
-
-#: frontend/src/metabase/visualizations/lib/settings/graph.js:347
-=======
 #: frontend/src/metabase/visualizations/lib/settings/column.js:338
 msgid "Symbol"
 msgstr "符号"
@@ -15252,7 +14590,6 @@ msgid "Value formatting"
 msgstr "值格式"
 
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:355
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Full"
 msgstr "充分"
 
@@ -16767,29 +16104,6 @@ msgstr "可用列数"
 msgid "user attribute"
 msgstr "用户属性"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/dashboard/components/DashCard.jsx:248
-msgid "Text card"
-msgstr "文本卡"
-
-#: frontend/src/metabase/dashboard/components/DashCard.jsx:346
-msgid "Click behavior"
-msgstr "点击行为"
-
-#: frontend/src/metabase/dashboard/components/DashCard.jsx:381
-msgid "Visualization options"
-msgstr "可视化选项"
-
-#: frontend/src/metabase/dashboard/components/DashCard.jsx:418
-msgid "Edit series"
-msgstr "编辑系列"
-
-#: frontend/src/metabase/dashboard/components/DashCard.jsx:418
-msgid "Add series"
-msgstr "添加系列"
-
-#: frontend/src/metabase/dashboard/components/DashCard.jsx:494
-=======
 #: frontend/src/metabase/dashboard/components/DashCard.jsx:251
 msgid "Text card"
 msgstr "文本卡"
@@ -16811,7 +16125,6 @@ msgid "Add series"
 msgstr "添加系列"
 
 #: frontend/src/metabase/dashboard/components/DashCard.jsx:498
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "On click"
 msgstr "点击后"
 
@@ -17239,17 +16552,6 @@ msgstr "输入用户名或电子邮件地址"
 msgid "New snippet"
 msgstr "新片段"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/time.js:111
-msgid "{0}:00 PM"
-msgstr "{0}:00下午"
-
-#: frontend/src/metabase/lib/time.js:113
-msgid "12:00 AM"
-msgstr "上午12:00"
-
-#: frontend/src/metabase/lib/time.js:117
-=======
 #: frontend/src/metabase/lib/time.js:118
 msgid "{0}:00 PM"
 msgstr "{0}:00下午"
@@ -17259,7 +16561,6 @@ msgid "12:00 AM"
 msgstr "上午12:00"
 
 #: frontend/src/metabase/lib/time.js:124
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "{0}:00 AM"
 msgstr "{0}:00 AM"
 
@@ -17640,11 +16941,7 @@ msgstr "姓名不详"
 msgid "Unknown engine"
 msgstr "未知的发动机"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/collections/components/CollectionHeader/CollectionHeader.jsx:70
-=======
 #: frontend/src/metabase/collections/components/CollectionHeader/CollectionHeader.jsx:72
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Edit collection"
 msgstr "编辑收藏"
 
@@ -17696,19 +16993,11 @@ msgstr "在查询中包含用户ID和查询哈希值。"
 msgid "When on, Metabase User ID and query hash get appended to queries on this database, which can be useful for auditing and debugging. However, this causes each query to look distinct, preventing BigQuery from returning cached results, which may increase your costs."
 msgstr "当开启时，Metabase用户ID和查询散列会被附加到这个数据库的查询中，这对审计和调试很有用。然而，这将导致每个查询看起来不同，防止BigQuery返回缓存结果，这可能会增加你的成本。"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/entities/databases/forms.js:361
-msgid "Periodically refingerprint tables"
-msgstr "定期重新打印表格"
-
-#: frontend/src/metabase/entities/databases/forms.js:362
-=======
 #: frontend/src/metabase/entities/databases/forms.js:356
 msgid "Periodically refingerprint tables"
 msgstr "定期重新打印表格"
 
 #: frontend/src/metabase/entities/databases/forms.js:357
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "When syncing with this database, Metabase will scan a subset of values of fields to gather statistics that enable things like improved binning behavior in charts, and to generally make your Metabase instance smarter."
 msgstr "当与该数据库同步时，Metabase将扫描字段值的子集，以收集统计数据，从而实现诸如改进图表中的分批行为，并通常使您的Metabase实例更加智能。"
 
@@ -17760,19 +17049,11 @@ msgstr "这个可视化有一个问题"
 msgid "Showing first {0} rows"
 msgstr "显示前{0}行"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/time.js:145
-msgid "first"
-msgstr "第一"
-
-#: frontend/src/metabase/lib/time.js:147
-=======
 #: frontend/src/metabase/lib/time.js:153
 msgid "first"
 msgstr "第一"
 
 #: frontend/src/metabase/lib/time.js:155
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "last"
 msgstr "最后的"
 
@@ -18532,19 +17813,11 @@ msgstr "定时任务正在被逐步淘汰"
 msgid "You can now set up {0} instead. We'll remove Pulses in a future release, and help you migrate any that you still have."
 msgstr "你现在可以设置{0}来代替。我们将在未来的版本中删除定时任务，并帮助你迁移任何你仍然拥有的定时任务。"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/sharing/components/EmailAttachmentPicker.jsx:181
-msgid "File format"
-msgstr "文件格式"
-
-#: frontend/src/metabase/sharing/components/EmailAttachmentPicker.jsx:196
-=======
 #: frontend/src/metabase/sharing/components/EmailAttachmentPicker.jsx:196
 msgid "File format"
 msgstr "文件格式"
 
 #: frontend/src/metabase/sharing/components/EmailAttachmentPicker.jsx:211
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Questions to attach"
 msgstr "附上的问题"
 
@@ -18778,11 +18051,7 @@ msgid "Choose \"Desktop App\" as the application type. Name it whatever you'd li
 msgstr "选择 \"桌面应用程序 \"作为应用程序类型。命名为任何你喜欢的名字。"
 
 #: frontend/src/metabase/home/containers/SearchApp.jsx:103
-<<<<<<< HEAD
-#: frontend/src/metabase/nav/components/SearchBar.jsx:104
-=======
 #: frontend/src/metabase/nav/components/SearchResults.jsx:37
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Didn't find anything"
 msgstr "没发现什么"
 
@@ -18817,11 +18086,7 @@ msgstr[0] "函数{0}期望{1}参数。"
 msgid "Expecting boolean but found {0}"
 msgstr "期待布尔值，但发现{0}。"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/lib/time.js:115
-=======
 #: frontend/src/metabase/lib/time.js:122
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "12:00 PM"
 msgstr "中午12:00"
 
@@ -18862,20 +18127,12 @@ msgid "Duplicate this question"
 msgstr "重复这个问题"
 
 #: frontend/src/metabase/query_builder/components/data-search/ItemLocation.jsx:33
-<<<<<<< HEAD
-#: frontend/src/metabase/search/components/SearchResult.jsx:189
-=======
 #: frontend/src/metabase/search/components/InfoText.jsx:33
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Saved question in {0}"
 msgstr "保存在{0}中的问题"
 
 #: frontend/src/metabase/query_builder/components/data-search/ItemLocation.jsx:44
-<<<<<<< HEAD
-#: frontend/src/metabase/search/components/SearchResult.jsx:197
-=======
 #: frontend/src/metabase/search/components/InfoText.jsx:66
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Table in {0}"
 msgstr "表在{0}中"
 
@@ -18887,11 +18144,7 @@ msgstr "部分 "
 msgid "Metric for "
 msgstr "计量单位 "
 
-<<<<<<< HEAD
-#: frontend/src/metabase/search/components/SearchResult.jsx:242
-=======
 #: frontend/src/metabase/search/components/InfoText.jsx:45
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "{0} in {1}"
 msgstr "{0}在{1}中"
 
@@ -19219,11 +18472,7 @@ msgid "Information about active and idle connections for all pools"
 msgstr "关于所有池子的活动和空闲连接的信息"
 
 #: frontend/src/metabase/browse/containers/TableBrowser.jsx:60
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/DataSelector.jsx:905
-=======
 #: frontend/src/metabase/query_builder/components/DataSelector.jsx:906
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 #: frontend/src/metabase/query_builder/components/saved-question-picker/SavedQuestionPicker.jsx:113
 #: src/metabase/api/database.clj
 msgid "Saved Questions"
@@ -19261,11 +18510,7 @@ msgstr "查看更多"
 msgid "See less"
 msgstr "查看更多"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/components/LastEditInfoLabel.js:53
-=======
 #: frontend/src/metabase/components/LastEditInfoLabel.js:54
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Edited {0} by {1}"
 msgstr "由{1}编辑{0}。"
 
@@ -19277,16 +18522,11 @@ msgstr "关闭侧边栏"
 msgid "Add questions"
 msgstr "添加问题"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/dashboard/components/add-card-sidebar/QuestionList.jsx:51
-#: frontend/src/metabase/query_builder/components/saved-question-picker/SavedQuestionList.jsx:37
-=======
 #: frontend/src/metabase/admin/permissions/components/PermissionsEditor/PermissionsEditor.jsx:96
 #: frontend/src/metabase/admin/permissions/components/PermissionsSidebar/PermissionsSidebar.jsx:120
 #: frontend/src/metabase/dashboard/components/add-card-sidebar/QuestionList.jsx:53
 #: frontend/src/metabase/nav/components/RecentsList.jsx:87
 #: frontend/src/metabase/query_builder/components/saved-question-picker/SavedQuestionList.jsx:40
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Nothing here"
 msgstr "这里没有什么"
 
@@ -19338,11 +18578,7 @@ msgstr "名称、评级、描述等。"
 msgid "String"
 msgstr "字符串"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/DataSelector.jsx:761
-=======
 #: frontend/src/metabase/query_builder/components/DataSelector.jsx:762
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Search for a table..."
 msgstr "搜索表..."
 
@@ -19366,11 +18602,7 @@ msgstr "期待{0}打开括号"
 msgid "Expecting an opening parenthesis after function {0}"
 msgstr "期待在函数{0}之后有一个开头的小括号"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/view/ViewHeader.jsx:313
-=======
 #: frontend/src/metabase/query_builder/components/view/ViewHeader.jsx:322
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Explore results"
 msgstr "探索结果"
 
@@ -19648,11 +18880,7 @@ msgstr "确定参数值的错误：{0}。"
 msgid "Error building query parameter map: {0}"
 msgstr "构建查询参数图时出错。{0}"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/components/DriverWarning/DriverWarning.jsx:33
-=======
 #: frontend/src/metabase/components/DriverWarning/DriverWarning.jsx:41
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "This is our new {0} driver, which is faster and more reliable."
 msgstr "这是我们新的 {0} 驱动程序，它更快、更可靠。"
 
@@ -19662,11 +18890,7 @@ msgid "The old driver has been deprecated and will be removed in the next releas
 msgstr "旧驱动程序已弃用，将在下一个版本中删除。如果你真的\n"
 "需要使用它，您现在可以选择 {0}。"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/components/DriverWarning/DriverWarning.jsx:49
-=======
 #: frontend/src/metabase/components/DriverWarning/DriverWarning.jsx:63
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "This driver has been deprecated and will be removed in the next release."
 msgstr "此驱动程序已弃用，将在下一个版本中删除。"
 
@@ -19674,11 +18898,7 @@ msgstr "此驱动程序已弃用，将在下一个版本中删除。"
 msgid "We recommend that you upgrade to the new {0} driver, which is faster and more reliable."
 msgstr "我们建议您升级到新的 {0} 驱动程序，它更快更可靠。"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/components/DriverWarning/DriverWarning.jsx:60
-=======
 #: frontend/src/metabase/components/DriverWarning/DriverWarning.jsx:74
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "How to upgrade a driver"
 msgstr "如何升级驱动程序"
 
@@ -19690,11 +18910,7 @@ msgstr "新司机"
 msgid "Driver deprecated"
 msgstr "驱动程序已弃用"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/components/LastEditInfoLabel.js:45
-=======
 #: frontend/src/metabase/components/LastEditInfoLabel.js:46
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "you"
 msgstr "你"
 
@@ -19707,17 +18923,6 @@ msgid "{0} edited this"
 msgstr "{0} 编辑了此内容"
 
 #: enterprise/frontend/src/metabase-enterprise/collections/constants.js:5
-<<<<<<< HEAD
-#: frontend/src/metabase/plugins/index.js:65
-msgid "Regular"
-msgstr "常规的"
-
-#: enterprise/frontend/src/metabase-enterprise/collections/index.js:29
-msgid "Collection type"
-msgstr "收藏类型"
-
-#: enterprise/frontend/src/metabase-enterprise/collections/index.js:30
-=======
 #: frontend/src/metabase/plugins/index.js:71
 msgid "Regular"
 msgstr "常规的"
@@ -19727,7 +18932,6 @@ msgid "Collection type"
 msgstr "收藏类型"
 
 #: enterprise/frontend/src/metabase-enterprise/collections/index.js:26
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "The contents of Official collections will get a badge by their name and will be more likely to show up in search results."
 msgstr "官方收藏的内容将获得带有其名称的徽章，并且更有可能出现在搜索结果中。"
 
@@ -19743,25 +18947,6 @@ msgstr "适度"
 msgid "Verify this"
 msgstr "验证这一点"
 
-<<<<<<< HEAD
-#: enterprise/frontend/src/metabase-enterprise/moderation/service.js:48
-msgid "{0} verified this"
-msgstr "{0} 对此进行了验证"
-
-#: enterprise/frontend/src/metabase-enterprise/moderation/service.js:49
-msgid "Remove verification"
-msgstr "删除验证"
-
-#: enterprise/frontend/src/metabase-enterprise/moderation/service.js:65
-msgid "A moderator"
-msgstr "版主"
-
-#: frontend/src/metabase/admin/settings/selectors.js:400
-msgid "Cloud"
-msgstr "云"
-
-#: frontend/src/metabase/admin/settings/selectors.js:405
-=======
 #: enterprise/frontend/src/metabase-enterprise/moderation/service.js:69
 #: enterprise/frontend/src/metabase-enterprise/moderation/service.js:102
 msgid "{0} verified this"
@@ -19780,7 +18965,6 @@ msgid "Cloud"
 msgstr "云"
 
 #: frontend/src/metabase/plugins/builtin/settings/hosted.js:28
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Cloud Settings"
 msgstr "云设置"
 
@@ -19788,11 +18972,7 @@ msgstr "云设置"
 msgid "Edit details"
 msgstr "编辑详情"
 
-<<<<<<< HEAD
-#: frontend/src/metabase/query_builder/components/QuestionActivityTimeline.jsx:70
-=======
 #: frontend/src/metabase/query_builder/components/QuestionActivityTimeline.jsx:119
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "History"
 msgstr "历史"
 
@@ -19800,17 +18980,6 @@ msgstr "历史"
 msgid "Every field is hidden right now"
 msgstr "现在每个字段都是隐藏的"
 
-<<<<<<< HEAD
-#: enterprise/frontend/src/metabase-enterprise/collections/components/FormCollectionAuthorityLevel.jsx:50
-msgid "Make all sub-collections {0}, too."
-msgstr "也将所有子集合设为 {0}。"
-
-#: frontend/src/metabase/admin/settings/components/SettingsCloudStoreLink/SettingsCloudStoreLink.jsx:10
-msgid "Manage your Cloud account, including billing preferences and technical settings about this instance in your Metabase Store account."
-msgstr "管理您的云帐户，包括在您的 Metabase Store 帐户中有关此实例的计费首选项和技术设置。"
-
-#: frontend/src/metabase/admin/settings/components/SettingsCloudStoreLink/SettingsCloudStoreLink.jsx:12
-=======
 #: enterprise/frontend/src/metabase-enterprise/collections/components/FormCollectionAuthorityLevel.jsx:52
 msgid "Make all sub-collections {0}, too."
 msgstr "也将所有子集合设为 {0}。"
@@ -19820,7 +18989,6 @@ msgid "Manage your Cloud account, including billing preferences and technical se
 msgstr "管理您的云帐户，包括在您的 Metabase Store 帐户中有关此实例的计费首选项和技术设置。"
 
 #: frontend/src/metabase/plugins/components/SettingsCloudStoreLink/SettingsCloudStoreLink.jsx:12
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
 msgid "Go to the Metabase Store"
 msgstr "转到元数据库商店"
 
@@ -19852,8 +19020,6 @@ msgstr "下"
 msgid "Up"
 msgstr "向上"
 
-<<<<<<< HEAD
-=======
 #: enterprise/frontend/src/metabase-enterprise/advanced_config/index.js:16
 msgid "Approved domains for notifications"
 msgstr "已批准的用于通知的域名"
@@ -20572,5 +19738,3 @@ msgstr "没有找到Javascript资源。{0}"
 #: src/metabase/sync/sync_metadata/tables.clj
 msgid "Found new version for DB: {0}"
 msgstr "发现DB的新版本：{0}。"
-
->>>>>>> 6ffec1b96ce41572b7378415324818c9ca28dd0b
