@@ -14,6 +14,8 @@ RUN apk upgrade & apk add --update-cache --no-cache bash ttf-dejavu fontconfig c
 # add Metabase jar & add our run script to the image
 COPY ./metabase.jar ./run_metabase.sh /app/
 
+COPY ./csv.metabase-driver.jar /app/plugins/
+
 # expose our default runtime port
 EXPOSE 3000
 

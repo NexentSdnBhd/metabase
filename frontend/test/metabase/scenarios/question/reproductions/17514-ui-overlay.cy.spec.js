@@ -4,6 +4,7 @@ import {
   filterWidget,
   saveDashboard,
   editDashboard,
+  visualize,
 } from "__support__/e2e/cypress";
 
 import { setAdHocFilter } from "../../native-filters/helpers/e2e-date-filter-helpers";
@@ -41,7 +42,7 @@ const filter = {
 
 const dashboardDetails = { parameters: [filter] };
 
-describe.skip("issue 17514", () => {
+describe("issue 17514", () => {
   beforeEach(() => {
     restore();
     cy.signInAsAdmin();
@@ -50,8 +51,8 @@ describe.skip("issue 17514", () => {
   describe("scenario 1", () => {
     beforeEach(() => {
       cy.createQuestionAndDashboard({ questionDetails, dashboardDetails }).then(
-        ({ body: oldCard }) => {
-          const { card_id, dashboard_id } = oldCard;
+        ({ body: card }) => {
+          const { card_id, dashboard_id } = card;
 
           cy.intercept("POST", `/api/card/${card_id}/query`).as("cardQuery");
 
@@ -65,7 +66,7 @@ describe.skip("issue 17514", () => {
             ],
           };
 
-          cy.editDashboardCard(oldCard, mapFilterToCard);
+          cy.editDashboardCard(card, mapFilterToCard);
 
           cy.visit(`/dashboard/${dashboard_id}`);
 
@@ -112,7 +113,7 @@ describe.skip("issue 17514", () => {
 
       removeJoinedTable();
 
-      visualizeResults();
+      visualize();
 
       cy.findByText("Save").click();
 
@@ -127,7 +128,7 @@ describe.skip("issue 17514", () => {
       cy.findByText("Join data").click();
       cy.findByText("Products").click();
 
-      visualizeResults();
+      visualize();
 
       // Cypress cannot click elements that are blocked by an overlay so this will immediately fail if the issue is not fixed
       cy.findByText("110.93").click();
@@ -155,11 +156,6 @@ function closeModal() {
   });
 }
 
-function visualizeResults() {
-  cy.button("Visualize").click();
-  cy.wait("@dataset");
-}
-
 function openNotebookMode() {
   cy.icon("notebook").click();
 }
@@ -167,7 +163,7 @@ function openNotebookMode() {
 function removeJoinedTable() {
   cy.findAllByText("Join data")
     .parent()
-    .find(".Icon-close")
+    .findByTestId("remove-step")
     .click({ force: true });
 }
 

@@ -1,6 +1,6 @@
 import {
   restore,
-  setupDummySMTP,
+  setupSMTP,
   describeWithToken,
   popover,
   mockSessionProperty,
@@ -16,7 +16,7 @@ describe("scenarios > dashboard > subscriptions", () => {
   });
 
   it("should not allow sharing if there are no dashboard cards", () => {
-    cy.createDashboard("15077D").then(({ body: { id: DASHBOARD_ID } }) => {
+    cy.createDashboard().then(({ body: { id: DASHBOARD_ID } }) => {
       cy.visit(`/dashboard/${DASHBOARD_ID}`);
     });
     cy.findByText("This dashboard is looking empty.");
@@ -32,7 +32,7 @@ describe("scenarios > dashboard > subscriptions", () => {
   });
 
   it("should allow sharing if dashboard contains only text cards (metabase#15077)", () => {
-    cy.createDashboard("15077D").then(({ body: { id: DASHBOARD_ID } }) => {
+    cy.createDashboard().then(({ body: { id: DASHBOARD_ID } }) => {
       cy.visit(`/dashboard/${DASHBOARD_ID}`);
     });
     cy.icon("pencil").click();
@@ -66,15 +66,7 @@ describe("scenarios > dashboard > subscriptions", () => {
 
   describe("with email set up", () => {
     beforeEach(() => {
-      cy.request("DELETE", "http://localhost:80/email/all");
-      cy.request("PUT", "/api/setting", {
-        "email-smtp-host": "localhost",
-        "email-smtp-port": "25",
-        "email-smtp-username": "admin",
-        "email-smtp-password": "admin",
-        "email-smtp-security": "none",
-        "email-from-address": "mailer@metabase.test",
-      });
+      setupSMTP();
     });
 
     describe("with no existing subscriptions", () => {
@@ -86,15 +78,8 @@ describe("scenarios > dashboard > subscriptions", () => {
         // Make sure no recipients have been assigned
         cy.findByPlaceholderText("Enter user names or email addresses");
 
-        /**
-         * Change the schedule to "Monthly"
-         *
-         * Please note: This test was modified for the `release-x.40.x` branch specifically.
-         *              The default schedule on `master` is "hourly".
-         *              That change was introduced in https://github.com/metabase/metabase/pull/17425.
-         */
-
-        cy.findByText("Daily").click();
+        // Change the schedule to "Monthly"
+        cy.findByText("Hourly").click();
         cy.findByText("Monthly").click();
 
         sidebar().within(() => {
@@ -104,7 +89,16 @@ describe("scenarios > dashboard > subscriptions", () => {
 
       it("should allow creation of a new email subscription", () => {
         createEmailSubscription();
-        cy.findByText("Emailed daily at 8:00 AM");
+        cy.findByText("Emailed hourly");
+      });
+
+      it("should not render people dropdown outside of the borders of the screen (metabase#17186)", () => {
+        openDashboardSubscriptions();
+
+        cy.findByText("Email it").click();
+        cy.findByPlaceholderText("Enter user names or email addresses").click();
+
+        popover().isRenderedWithinViewport();
       });
 
       it("should not render people dropdown outside of the borders of the screen (metabase#17186)", () => {
@@ -121,7 +115,7 @@ describe("scenarios > dashboard > subscriptions", () => {
       beforeEach(createEmailSubscription);
       it("should show existing dashboard subscriptions", () => {
         openDashboardSubscriptions();
-        cy.findByText("Emailed daily at 8:00 AM");
+        cy.findByText("Emailed hourly");
       });
     });
 
@@ -138,13 +132,13 @@ describe("scenarios > dashboard > subscriptions", () => {
       cy.findByText("Questions to attach").click();
       clickButton("Done");
       cy.findByText("Subscriptions");
-      cy.findByText("Emailed daily at 8:00 AM").click();
+      cy.findByText("Emailed hourly").click();
       cy.findByText("Delete this subscription").scrollIntoView();
       cy.findByText("Questions to attach");
       cy.findAllByRole("listitem")
         .contains("Orders") // yields the whole <li> element
         .within(() => {
-          cy.findByRole("checkbox").should("have.attr", "aria-checked", "true");
+          cy.findByRole("checkbox").should("be.checked");
         });
     });
 
@@ -152,7 +146,7 @@ describe("scenarios > dashboard > subscriptions", () => {
       assignRecipient();
       cy.findByText("To:").click();
       cy.get(".AdminSelect")
-        .contains("Daily")
+        .contains("Hourly")
         .click();
       cy.findByText("Monthly").click();
       cy.get(".AdminSelect")
@@ -168,7 +162,7 @@ describe("scenarios > dashboard > subscriptions", () => {
       cy.findByText(/^Emailed monthly on the first (?!null)/);
     });
 
-    it.skip("should work when using dashboard default filter value on native query with required parameter (metabase#15705)", () => {
+    it("should work when using dashboard default filter value on native query with required parameter (metabase#15705)", () => {
       // In order to reproduce this test, we need to use the old syntac for dashboard filters
       mockSessionProperty("field-filter-operators-enabled?", false);
 
@@ -187,48 +181,50 @@ describe("scenarios > dashboard > subscriptions", () => {
           },
         },
       }).then(({ body: { id: QUESTION_ID } }) => {
-        cy.createDashboard("15705D").then(({ body: { id: DASHBOARD_ID } }) => {
-          // Add filter to the dashboard
-          cy.request("PUT", `/api/dashboard/${DASHBOARD_ID}`, {
-            // Using the old dashboard filter syntax
-            parameters: [
-              {
-                name: "Quantity",
-                slug: "quantity",
-                id: "930e4001",
-                type: "category",
-                default: "20",
-              },
-            ],
-          });
-
-          // Add question to the dashboard
-          cy.request("POST", `/api/dashboard/${DASHBOARD_ID}/cards`, {
-            cardId: QUESTION_ID,
-          }).then(({ body: { id: DASH_CARD_ID } }) => {
-            // Connect filter to that question
-            cy.request("PUT", `/api/dashboard/${DASHBOARD_ID}/cards`, {
-              cards: [
+        cy.createDashboard({ name: "15705D" }).then(
+          ({ body: { id: DASHBOARD_ID } }) => {
+            // Add filter to the dashboard
+            cy.request("PUT", `/api/dashboard/${DASHBOARD_ID}`, {
+              // Using the old dashboard filter syntax
+              parameters: [
                 {
-                  id: DASH_CARD_ID,
-                  card_id: QUESTION_ID,
-                  row: 0,
-                  col: 0,
-                  sizeX: 12,
-                  sizeY: 10,
-                  parameter_mappings: [
-                    {
-                      parameter_id: "930e4001",
-                      card_id: QUESTION_ID,
-                      target: ["variable", ["template-tag", "qty"]],
-                    },
-                  ],
+                  name: "Quantity",
+                  slug: "quantity",
+                  id: "930e4001",
+                  type: "category",
+                  default: "3",
                 },
               ],
             });
-          });
-          assignRecipient({ dashboard_id: DASHBOARD_ID });
-        });
+
+            // Add question to the dashboard
+            cy.request("POST", `/api/dashboard/${DASHBOARD_ID}/cards`, {
+              cardId: QUESTION_ID,
+            }).then(({ body: { id: DASH_CARD_ID } }) => {
+              // Connect filter to that question
+              cy.request("PUT", `/api/dashboard/${DASHBOARD_ID}/cards`, {
+                cards: [
+                  {
+                    id: DASH_CARD_ID,
+                    card_id: QUESTION_ID,
+                    row: 0,
+                    col: 0,
+                    sizeX: 12,
+                    sizeY: 10,
+                    parameter_mappings: [
+                      {
+                        parameter_id: "930e4001",
+                        card_id: QUESTION_ID,
+                        target: ["variable", ["template-tag", "qty"]],
+                      },
+                    ],
+                  },
+                ],
+              });
+            });
+            assignRecipient({ dashboard_id: DASHBOARD_ID });
+          },
+        );
       });
       // Click anywhere outside to close the popover
       cy.findByText("15705D").click();
@@ -238,10 +234,11 @@ describe("scenarios > dashboard > subscriptions", () => {
         expect(body[0].html).not.to.include(
           "An error occurred while displaying this card.",
         );
+        expect(body[0].html).to.include("2,738");
       });
     });
 
-    it.skip("should include text cards (metabase#15744)", () => {
+    it("should include text cards (metabase#15744)", () => {
       const TEXT_CARD = "FooBar";
 
       cy.visit("/dashboard/1");
@@ -279,7 +276,7 @@ describe("scenarios > dashboard > subscriptions", () => {
       cy.findAllByRole("button", { name: "Done" }).should("not.be.disabled");
     });
 
-    it.skip("should have 'Send to Slack now' button (metabase#14515)", () => {
+    it("should have 'Send to Slack now' button (metabase#14515)", () => {
       cy.findAllByRole("button", { name: "Send to Slack now" }).should(
         "be.disabled",
       );
@@ -293,7 +290,7 @@ describe("scenarios > dashboard > subscriptions", () => {
     beforeEach(() => {
       cy.skipOn(!!Cypress.env("HAS_ENTERPRISE_TOKEN"));
       cy.visit(`/dashboard/1`);
-      setupDummySMTP();
+      setupSMTP();
     });
 
     describe("with parameters", () => {
@@ -314,7 +311,7 @@ describe("scenarios > dashboard > subscriptions", () => {
   describeWithToken("EE email subscriptions", () => {
     beforeEach(() => {
       cy.visit(`/dashboard/1`);
-      setupDummySMTP();
+      setupSMTP();
     });
 
     describe("with no parameters", () => {
@@ -344,7 +341,7 @@ describe("scenarios > dashboard > subscriptions", () => {
         assignRecipient();
         clickButton("Done");
 
-        cy.findByText("Emailed daily at 8:00 AM").click();
+        cy.findByText("Emailed hourly").click();
 
         cy.findAllByText("Corbin Mertz")
           .last()
@@ -458,7 +455,7 @@ function mockSlackConfigured() {
         name: "Email",
         allows_recipients: false,
         recipients: ["user", "email"],
-        schedules: ["daily", "weekly", "monthly"],
+        schedules: ["hourly", "daily", "weekly", "monthly"],
         configured: false,
       },
       slack: {
