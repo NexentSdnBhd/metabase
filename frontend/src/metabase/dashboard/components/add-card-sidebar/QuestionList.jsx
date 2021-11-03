@@ -18,8 +18,6 @@ QuestionList.propTypes = {
   hasCollections: PropTypes.bool,
 };
 
-const SEARCH_LIMIT = 1000;
-
 export function QuestionList({
   searchText,
   collectionId,

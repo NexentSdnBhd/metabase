@@ -393,22 +393,6 @@ const SECTIONS = updateSectionsWithPlugins({
   },
 });
 
-if (MetabaseSettings.isHosted()) {
-  const allSections = Object.values(SECTIONS);
-  const lastSection = _.max(allSections, "order");
-  SECTIONS.cloud = {
-    name: t`Cloud`,
-    order: lastSection.order + 1,
-    settings: [
-      {
-        key: "store-link",
-        display_name: t`Cloud Settings`,
-        widget: SettingsCloudStoreLink,
-      },
-    ],
-  };
-}
-
 export const getSettings = createSelector(
   state => state.admin.settings.settings,
   state => state.admin.settings.warnings,

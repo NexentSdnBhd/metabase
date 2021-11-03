@@ -14,7 +14,6 @@ import { SearchResults } from "./SearchResults";
 import RecentsList from "./RecentsList";
 
 const ALLOWED_SEARCH_FOCUS_ELEMENTS = new Set(["BODY", "A"]);
-const SEARCH_LIMIT = 50;
 
 export default class SearchBar extends React.Component {
   state = {
