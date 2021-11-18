@@ -60,6 +60,12 @@ export default class ProfileLink extends Component {
           adminContext ? "Exit Admin" : "Enter Admin"
         }`,
       },
+      admin && {
+        title: t`Engine`,
+        icon: null,
+        action: () => (window.location.href = `https://engine.nexent.co`),
+        event: `Navbar;Profile Dropdown;Engine Panel`,
+      },
       {
         title: t`Activity`,
         icon: null,
@@ -78,12 +84,6 @@ export default class ProfileLink extends Component {
         icon: null,
         action: () => this.openModal("about"),
         event: `Navbar;Profile Dropdown;About ${tag}`,
-      },
-      {
-        title: t`Engine`,
-        icon: null,
-        action: () => (window.location.href = `https://engine.nexent.co`),
-        event: `Navbar;Profile Dropdown;Engine Panel`,
       },
       {
         title: t`Sign out`,

@@ -198,7 +198,13 @@ export default class DashboardHeader extends Component {
 
     if (isFullscreen && parametersWidget) {
       buttons.push(parametersWidget);
-      buttons.push(<Back classes="text-brand-hover" />);
+      buttons.push(
+        <Back classes="text-brand-hover"> 
+          <DashboardHeaderButton>
+            <Icon name="arrow_left" />
+          </DashboardHeaderButton>
+        </Back>
+      );
     }
 
     if (isEditing) {
@@ -281,7 +287,6 @@ export default class DashboardHeader extends Component {
     }
 
     if (!isFullscreen && !isEditing && canEdit) {
-      buttons.push(<Back classes="text-brand-hover cursor-pointer" />);
       buttons.push(
         <Tooltip key="edit-dashboard" tooltip={t`Edit dashboard`}>
           <a
@@ -299,6 +304,14 @@ export default class DashboardHeader extends Component {
     }
 
     if (!isFullscreen && !isEditing) {
+      buttons.push(
+        <Back classes="text-brand-hover cursor-pointer" >
+          <DashboardHeaderButton>
+            <Icon name="arrow_left" />
+          </DashboardHeaderButton>
+        </Back>
+      );
+
       const extraButtonClassNames =
         "bg-brand-hover text-white-hover py2 px3 text-bold block cursor-pointer";
       if (canEdit) {

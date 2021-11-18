@@ -1,5 +1,4 @@
 import Tooltip from "metabase/components/Tooltip";
-import Icon from "metabase/components/Icon";
 import { t } from "ttag";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
@@ -33,7 +32,7 @@ class Back extends Component {
           className={classes}
           onClick={this.goBack}
         >
-          <Icon name="arrow_left" />
+          {this.props.children}
         </a>
       </Tooltip>
     );

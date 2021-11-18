@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { t } from "ttag";
 import cx from "classnames";
 import { Box } from "grid-styled";
+import Icon from "metabase/components/Icon";
 
 import Link from "metabase/components/Link";
 import ButtonBar from "metabase/components/ButtonBar";
@@ -251,7 +252,9 @@ export class ViewTitleHeader extends React.Component {
           </div>
         )}
         <div className="ml-auto flex align-center">
-          <Back classes="text-brand text-bold py1 px2 rounded bg-white bg-light-hover" />
+          <Back classes="text-brand text-bold py1 px2 rounded bg-white bg-light-hover">
+            <Icon name="arrow_left" />
+          </Back>
           {isDirty ? (
             <Link
               className="text-brand text-bold py1 px2 rounded bg-white bg-light-hover"

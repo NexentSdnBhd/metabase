@@ -11,7 +11,7 @@ const REGULAR_ITEMS = [
   "About Metabase",
   "Sign out",
 ];
-const ADMIN_ITEMS = [...REGULAR_ITEMS, "Admin"];
+const ADMIN_ITEMS = [...REGULAR_ITEMS, "Admin", "Engine"];
 const HOSTED_ITEMS = [...ADMIN_ITEMS, "Manage Metabase Cloud"];
 
 describe("ProfileLink", () => {
