@@ -1,67 +1,64 @@
-/*global ga*/
+import Settings from "metabase/lib/settings";
+import { isProduction } from "metabase/env";
 
-import MetabaseSettings from "metabase/lib/settings";
-
-import { DEBUG } from "metabase/lib/debug";
-
-// Simple module for in-app analytics.  Currently sends data to GA but could be extended to anything else.
-const MetabaseAnalytics = {
-  // track a pageview (a.k.a. route change)
-  trackPageView: function(url: string) {
-    if (url) {
-      // scrub query builder urls to remove serialized json queries from path
-      url = url.lastIndexOf("/q/", 0) === 0 ? "/q/" : url;
-
-      const { tag } = MetabaseSettings.get("version") || {};
-
-      if (typeof ga === "function") {
-        ga("set", "dimension1", tag);
-        ga("set", "page", url);
-        ga("send", "pageview", url);
-      }
-    }
-  },
-
-  // track an event
-  trackEvent: function(
-    category: string,
-    action?: ?string,
-    label?: ?(string | number | boolean),
-    value?: ?number,
-  ) {
-    const { tag } = MetabaseSettings.get("version") || {};
-
-    // category & action are required, rest are optional
-    if (typeof ga === "function" && category && action) {
-      ga("set", "dimension1", tag);
-      ga("send", "event", category, action, label, value);
-    }
-    if (DEBUG) {
-      console.log("trackEvent", { category, action, label, value });
-    }
-  },
+export const createTracker = () => {
+  if (isTrackingEnabled()) {
+    createGoogleAnalyticsTracker();
+    document.body.addEventListener("click", handleStructEventClick, true);
+  }
 };
 
-export default MetabaseAnalytics;
+export const trackPageView = url => {
+  if (isTrackingEnabled() && url) {
+    trackGoogleAnalyticsPageView(url);
+  }
+};
 
-export function registerAnalyticsClickListener() {
-  document.body.addEventListener(
-    "click",
-    function(e) {
-      let node = e.target;
+export const trackStructEvent = (category, action, label, value) => {
+  if (isTrackingEnabled() && category && label) {
+    trackGoogleAnalyticsStructEvent(category, action, label, value);
+  }
+};
 
-      // check the target and all parent elements
-      while (node) {
-        if (node.dataset && node.dataset.metabaseEvent) {
-          // we expect our event to be a semicolon delimited string
-          const parts = node.dataset.metabaseEvent
-            .split(";")
-            .map(p => p.trim());
-          MetabaseAnalytics.trackEvent(...parts);
-        }
-        node = node.parentNode;
-      }
-    },
-    true,
-  );
-}
+export const trackSchemaEvent = () => {
+  // intentionally blank
+};
+
+const isTrackingEnabled = () => {
+  return isProduction && Settings.trackingEnabled();
+};
+
+const createGoogleAnalyticsTracker = () => {
+  const code = Settings.get("ga-code");
+  window.ga?.("create", code, "auto");
+
+  Settings.on("anon-tracking-enabled", enabled => {
+    window[`ga-disable-${code}`] = enabled ? null : true;
+  });
+};
+
+const trackGoogleAnalyticsPageView = url => {
+  const version = Settings.get("version", {});
+  window.ga?.("set", "dimension1", version.tag);
+  window.ga?.("set", "page", url);
+  window.ga?.("send", "pageview", url);
+};
+
+const trackGoogleAnalyticsStructEvent = (category, action, label, value) => {
+  const version = Settings.get("version", {});
+  window.ga?.("set", "dimension1", version.tag);
+  window.ga?.("send", "event", category, action, label, value);
+};
+
+const handleStructEventClick = event => {
+  if (!isTrackingEnabled()) {
+    return;
+  }
+
+  for (let node = event.target; node != null; node = node.parentNode) {
+    if (node.dataset && node.dataset.metabaseEvent) {
+      const parts = node.dataset.metabaseEvent.split(";").map(p => p.trim());
+      trackStructEvent(...parts);
+    }
+  }
+};
