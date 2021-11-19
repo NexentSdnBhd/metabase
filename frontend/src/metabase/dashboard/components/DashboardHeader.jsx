@@ -199,11 +199,11 @@ export default class DashboardHeader extends Component {
     if (isFullscreen && parametersWidget) {
       buttons.push(parametersWidget);
       buttons.push(
-        <Back classes="text-brand-hover"> 
+        <Back classes="text-brand-hover">
           <DashboardHeaderButton>
             <Icon name="arrow_left" />
           </DashboardHeaderButton>
-        </Back>
+        </Back>,
       );
     }
 
@@ -305,11 +305,11 @@ export default class DashboardHeader extends Component {
 
     if (!isFullscreen && !isEditing) {
       buttons.push(
-        <Back classes="text-brand-hover cursor-pointer" >
+        <Back classes="text-brand-hover cursor-pointer">
           <DashboardHeaderButton>
             <Icon name="arrow_left" />
           </DashboardHeaderButton>
-        </Back>
+        </Back>,
       );
 
       const extraButtonClassNames =
